@@ -10,9 +10,9 @@ import org.springframework.boot.test.context.SpringBootTest
 
 @SpringBootTest
 class GoogleTest @Autowired constructor (
+    val webAppProps: WebAppProps
     val googlePage: GooglePage,
     val searchResultsPage: SearchResultsPage,
-    val webAppProps: WebAppProps
 ) {
 
     @Test
